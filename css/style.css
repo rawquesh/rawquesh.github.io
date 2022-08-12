@@ -5,7 +5,7 @@
   --dark-two: #686868;
   --main-color: #784cfb;
   --light-one: #fff;
-  --light-two: #f9fafb;
+  --light-two: #fafcfc;
   --light-three: #f6f7fb;
 }
 
@@ -785,6 +785,189 @@ header .circle {
 }
 
 /* End About */
+
+/* Records */
+
+.records {
+  position: relative;
+  background-color: var(--main-color);
+  padding: 5.2rem 0;
+}
+
+.records .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.record-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid var(--light-one);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--light-one);
+}
+
+.record-circle.active {
+  background-color: var(--light-one);
+  color: var(--dark-one);
+  box-shadow: 0 0 0 15px rgb(255, 255, 255, 0.5);
+}
+
+.number {
+  font-weight: 400;
+  font-size: 2.35rem;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 1.12rem;
+  text-transform: uppercase;
+}
+
+.records .square1 {
+  left: 8%;
+  top: 10%;
+}
+
+.records .square2 {
+  right: 90px;
+  bottom: 70px;
+}
+
+.records .xshape {
+  top: 45px;
+  right: 120px;
+}
+
+.records .circle {
+  left: 7%;
+  bottom: 50px;
+}
+
+.records .triangle {
+  left: 65%;
+  bottom: 35px;
+}
+
+.records .wave1 {
+  top: 35px;
+  right: 30%;
+}
+
+.records .wave2 {
+  bottom: 40px;
+  left: 28%;
+}
+
+.records .half-circle {
+  top: 30px;
+  right: 50%;
+}
+
+.add-perc::after {
+  content: "%";
+}
+.add-plus::after {
+  content: "+";
+}
+
+/* End Records */
+
+/* Testimonials */
+
+.testimonials {
+  background-color: var(--light-two);
+  overflow: hidden;
+}
+
+.testi-content {
+  margin-top: 3rem;
+}
+
+.reviews {
+  overflow: hidden;
+}
+
+.review {
+  position: relative;
+  padding: 2rem 1.5rem;
+}
+
+.quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--main-color);
+  opacity: 0.04;
+  font-size: 8rem;
+}
+
+.rate {
+  display: flex;
+  font-size: 1.4rem;
+  color: #ebc000;
+  margin-bottom: 1.5rem;
+}
+
+.rate i {
+  margin-right: 0.3rem;
+}
+
+.review-text {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.7;
+}
+
+.review-info {
+  margin-top: 2rem;
+}
+
+.review-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-one);
+}
+
+.review-job {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.review-nav {
+  bottom: 2.2rem;
+  top: initial;
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.swiper-button-next {
+  right: 2rem;
+  left: initial;
+}
+
+.swiper-button-prev {
+  right: 4.5rem;
+  left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+/* End Testimonials */
 
 /* Contact */
 

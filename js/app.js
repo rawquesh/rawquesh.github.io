@@ -72,7 +72,7 @@ function countUp() {
     const updateCount = () => {
       let currentNum = +numb.innerText;
       let maxNum = +numb.dataset.num;
-      let speed = 100;
+      let speed = 200;
       const increment = Math.ceil(maxNum / speed);
 
       if (currentNum < maxNum) {
