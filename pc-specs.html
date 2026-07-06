@@ -8,12 +8,17 @@
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
-            --accent-color: #38bdf8;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --border-color: #334155;
-            --row-hover: #1e293b;
-            --row-alt: #151f32;
+            
+            /* Unified row color for ALL components */
+            --row-bg: #1e293b;
+            --row-hover: #293548;
+
+            /* Lighter accent colors for header and total rows */
+            --header-bg: #334155; 
+            --total-bg: #384b65;
         }
 
         body {
@@ -39,7 +44,7 @@
         h1 {
             margin-top: 0;
             font-size: 2rem;
-            color: var(--accent-color);
+            color: var(--text-main);
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
         }
@@ -62,8 +67,8 @@
         }
 
         th {
-            background-color: #0f172a;
-            color: var(--accent-color);
+            background-color: var(--header-bg);
+            color: var(--text-main);
             font-weight: 600;
             text-transform: uppercase;
             font-size: 0.85rem;
@@ -76,14 +81,11 @@
             padding: 14px 16px;
             border-bottom: 1px solid var(--border-color);
             font-size: 0.95rem;
-        }
-
-        tr:nth-child(even) td {
-            background-color: var(--row-alt);
+            background-color: var(--row-bg); /* Applies identical background to every item */
         }
 
         tr:hover td {
-            background-color: #293548 !important;
+            background-color: var(--row-hover) !important;
         }
 
         .price-col {
@@ -95,20 +97,19 @@
         .total-row {
             font-weight: bold;
             font-size: 1.1rem;
-            background-color: #0f172a !important;
         }
 
         .total-row td {
-            border-top: 2px solid var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
-            color: var(--accent-color);
-            background-color: #0f172a !important;
+            border-top: 2px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+            background-color: var(--total-bg) !important;
         }
 
         .component-badge {
             display: inline-block;
             padding: 4px 8px;
-            background: #334155;
+            background: #475569; /* Identical badge styling for all */
             border-radius: 4px;
             font-size: 0.8rem;
             font-weight: 600;
@@ -160,7 +161,7 @@
             </tr>
             <tr>
                 <td><span class="component-badge">Storage</span></td>
-                <td>Adata Legend 800 1TB M.2 (Secondary)</td>
+                <td>Adata Legend 800 1TB Internal SSD (Secondary)</td>
                 <td class="price-col">₹4,545</td>
             </tr>
             <tr>
